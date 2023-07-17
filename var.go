@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-// 変数宣言
 func Var() {
 	// 整数型の変数
 	var num1 int = 123
@@ -22,6 +21,6 @@ func Var() {
 	fmt.Println(num1)
 	fmt.Println(num2)
 	fmt.Println(num3)
-	fmt.Println(s) //コメント化するとエラーになる。
+	fmt.Println(s) // コメント化するとエラーになる。
 
 }
