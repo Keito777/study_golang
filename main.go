@@ -14,5 +14,8 @@ func main() {
 	// Var()
 
 	// シャドーイング（スコープ）
-	Shadow()
+	//Shadow()
+
+	// データ型
+	DataType()
 }
