@@ -17,5 +17,8 @@ func main() {
 	//Shadow()
 
 	// データ型
-	DataType()
+	// DataType()
+
+	// 配列・スライス
+	Array()
 }
