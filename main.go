@@ -23,5 +23,8 @@ func main() {
 	// Array()
 
 	// マップ（辞書）
-	Map()
+	// Map()
+
+	// 制御構文
+	Seigyo()
 }
