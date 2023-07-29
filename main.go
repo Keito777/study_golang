@@ -20,5 +20,8 @@ func main() {
 	// DataType()
 
 	// 配列・スライス
-	Array()
+	// Array()
+
+	// マップ（辞書）
+	Map()
 }
