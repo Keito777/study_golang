@@ -26,5 +26,8 @@ func main() {
 	// Map()
 
 	// 制御構文
-	Seigyo()
+	// Seigyo()
+
+	// 関数
+	Allfunc()
 }

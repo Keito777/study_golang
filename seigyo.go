@@ -9,5 +9,5 @@ func Seigyo() {
 	// ForSeigyo()
 
 	// switch文
-	SwitchSeigyo()
+	// SwitchSeigyo()
 }
