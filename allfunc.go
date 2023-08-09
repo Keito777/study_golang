@@ -43,16 +43,19 @@ func Allfunc() {
 	// その場で受け取る場合
 	Func7_2(5, 5, func(x, y int) int { return x + y }) // 10
 
-	// ⑧　即時関数
-	Func8 := func(txt string) string { return txt }("即実行")
-	fmt.Println(Func8) // 即実行
+	// ⑧　別の関数を内部で実行（わざわざ、関数を引数で受け取らない）
+	Func8() // Hello
 
-	// ⑨ defer（関数を抜ける時に実行する。複数deferがある場合、後ろから実行）
+	// ⑨　即時関数
+	Func9 := func(txt string) string { return txt }("即実行")
+	fmt.Println(Func9) // 即実行
+
+	// ⑩ defer（関数を抜ける時に実行する。複数deferがある場合、後ろから実行）
 	d := func() {
 		println(3)
 		defer println(4)
 		return
-		println(5)
+		println(5) // returnより後ろは実行されない
 	}
 
 	println(1)
@@ -62,6 +65,6 @@ func Allfunc() {
 	defer println(7)
 	// 出力順：1 3 4 7 6 2
 
-	// ⑨-2 ファイル操作（ファイルを開いた後は、必ずクローズさせる　クローズの書き忘れ防止）
-	// Func9_2()
+	// ⑩-2 ファイル操作（ファイルを開いた後は、必ずクローズさせる　クローズの書き忘れ防止）
+	// Func10_2()
 }

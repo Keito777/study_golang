@@ -59,7 +59,13 @@ func Func7_2(x, y int, f func(int, int) int) {
 	fmt.Println(f(x, y))
 }
 
-func Func9_2() {
+// ⑧
+func Func8() {
+	Func1()
+}
+
+// ⑩-2
+func Func10_2() {
 	fp, err := os.Open("file.txt")
 	if err != nil {
 		log.Fatal(err)
